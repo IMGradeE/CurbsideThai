@@ -1,0 +1,12 @@
+<div>
+    <h1><a href="../dir/xx_home.html"><!--Project Name--></a></h1>
+        <p>
+            <!--Project description
+            skills used, things liked/disliked,
+            and/or difficulties,
+            enjoyable parts,
+            interesting concepts
+            --></p>
+    <!--Clickable Project Preview Image Link-->
+    <a href="../dir/file.html"><img src="../dir/images/xx_preview.ext" alt=""></a>
+</div>

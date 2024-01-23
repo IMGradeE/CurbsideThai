@@ -2,8 +2,9 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/curbside_thai" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/curbside_thai/starter_text_do_not_publish" />
+      <sourceFolder url="file://$MODULE_DIR$/ROOT" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/ROOT/mobile_panini/starter_text_do_not_publish" />
+      <excludeFolder url="file://$MODULE_DIR$/ROOT/curbside_thai/starter_text_do_not_publish" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
