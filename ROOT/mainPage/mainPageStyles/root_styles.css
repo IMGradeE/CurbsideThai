@@ -56,8 +56,7 @@ section.left {
     align-self: self-start;
     align-content: flex-start;
 }
-setion:after {
-}
+
 
 section > p:first-of-type:before{
     content: '\301D';
@@ -97,7 +96,7 @@ dl > dt{
 }
 
 dl > dd{
-    padding-left: 0px;
+    padding-left: 0;
     padding-bottom: 1em;
 }
 dl > dt:before{
