@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@font-face { font-family: "JetBrains Mono";
+    src: local("JetBrains Mono");
+}
+/*Common Styles*/
+header > img {
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+html{
+    font-family: "JetBrains Mono", sans-serif;
+    background-color: rgba(5, 226, 255, 15%);
+    color: black;
+}
+
+html *{
+    border-bottom-color: rgba(5, 255, 159, 20%);
+    border-right-color: rgba(5, 255, 159, 40%);
+    border-top-color: rgba(5, 101, 255, 40%);
+    border-left-color: rgba(5, 101, 255, 20%);
+}
+
+header{
+    margin-top: -5px;
+}
+
+nav {
+    padding-left: 2%;
+    background-color: rgba(5, 226, 255, 20%);
+    border-style: inset;
+    border-radius: 10px;
+}
+
+
+
+nav#home {
+    background-color: rgba(5, 226, 255, 20%);
+    border-style: inset;
+    border-radius: 10px;
+
+}
+
+
+img{
+    width: 180px;
+    height: 180px;
+}
+section.imgdiv{
+    width: 15%;
+}
+
+section.left {
+    width: 85%;
+    align-self: self-start;
+    align-content: flex-start;
+}
+setion:after {
+}
+
+section > p:first-of-type:before{
+    content: '\301D';
+}
+
+section > p:last-of-type:after{
+    content: '\301E';
+}
+
+body > article{
+    border-style: outset;
+    border-radius: 10px;
+    background-color: rgba(5, 226, 255, 30%);
+    padding-left: 2%;
+    padding-right: -2%;
+}
+
+dl {
+   text-align: left;
+}
+
+
+footer{
+    border-style: inset;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(5, 226, 255, 20%);
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+
+}
+
+/*General Styles*/
+
+dl > dt{
+    padding-left: 2%;
+}
+
+dl > dd{
+    padding-left: 0px;
+    padding-bottom: 1em;
+}
+dl > dt:before{
+    content: '\0040';
+}
+
+dl > dd:before{
+    content: '\00BB' ' ';
+}
+dl > dd#homelink:after, dd#homelink:before{
+    content: none;
+}
+dl > dd:after{
+    vertical-align: text-bottom;
+    content: ' ' '\25A0';
+}
+/*Link Styles*/
+
+a:link, a:visited{
+    text-decoration: none;
+    color: rgb(5, 101, 255);
+}
+a:hover, a:active{
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(5, 255, 195);
+}
+
+dl {
+    list-style: disc; /*This doesn't do
+                        anything but I didn't
+                         use any lists it can interact with
+                         and it was listed as a requirement*/
+}
