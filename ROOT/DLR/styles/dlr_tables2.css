@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/*
+
+   Tables Style Sheet
+   Author: 
+   Date:   
+
+   Filename:         dlr_tables2.css
+
+*/
+
+/* Table Styles */
+table.programs{
+    font-family: Arial, Verdana, sans-serif;
+    width: 100%;
+    border: outset 15px rgb(151, 151, 151);
+    border-collapse: collapse;
+}
+table.programs tr{
+    height: 25px;
+}
+
+/* Table Caption Styles */
+table.programs caption{
+    caption-side: bottom;
+    text-align: center;
+}
+
+
+/* Table Column Styles */
+table.programs col.timeColumn{
+    width: 10%;
+    background-color: rgb(215, 205, 151);
+}
+
+table.programs col.wDayColumns{
+    width: 11%;
+    background-color: rgb(236, 255, 211);
+}
+
+table.programs col.wEndColumns{
+    width: 17%;
+    background-color: rgb(255, 231, 255);
+}
+
+/* Table Header Styles */
+table.programs th, table.programs td{
+    border: solid 1px gray;
+    vertical-align: top;
+    padding: 5px;
+}
+
+table.programs thead{
+    color: white;
+    background-color: rgb(105, 177, 60);
+}
+
+table.programs thead th:first-of-type{
+    color: white;
+    background-color: rgb(153, 86, 7);
+}
+
+table.programs thead th:nth-of-type(7), table.programs thead th:nth-of-type(8){
+    background-color: rgb(153, 0, 153);
+}
+
+/* Table Footer Styles */
+table.programs tfoot{
+    color: white;
+    background-color: black;
+}
+
+
+
+
+
+

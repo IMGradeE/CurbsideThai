@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/*
+
+   Columns Style Sheet
+   Author: Payton Wilkes
+   Date:   01/23/2024
+
+   Filename:         dlr_columns2.css
+
+*/
+
+
+
+/* Column Styles */
+@media only screen and (min-width: 641px){
+    /*
+    Didn't include extensions because I didn't know
+    how in this context off of the top of my head and
+    I chose not to look for an answer.*/
+    section#main p:first-of-type{
+        font-size: small;
+        column-count: 3;
+        column-gap: 20px;
+        column-rule: solid 1px black;
+    }
+}
+
