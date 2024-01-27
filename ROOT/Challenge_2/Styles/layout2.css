@@ -108,7 +108,7 @@ div.col-1-4{
     padding-left: 4%;
 }
 div.col-1-4:after{
- display: table-cell;
+    display: table-cell;
     content: "";
     clear: both;
 }
