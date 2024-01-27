@@ -4,6 +4,7 @@
     src: local("JetBrains Mono");
 }
 /*Common Styles*/
+
 header > img {
     height: 100%;
     padding-bottom: 10px;
@@ -15,7 +16,7 @@ html{
     color: black;
 }
 
-html *{
+header, article, header a{
     border-bottom-color: rgba(5, 255, 159, 20%);
     border-right-color: rgba(5, 255, 159, 40%);
     border-top-color: rgba(5, 101, 255, 40%);
@@ -23,6 +24,7 @@ html *{
 }
 
 header{
+    width: 100%;
     margin-top: -5px;
 }
 
@@ -47,26 +49,28 @@ img{
     width: 180px;
     height: 180px;
 }
-section.imgdiv{
-    width: 15%;
+
+
+a.ch2Img img{
+    display: block;
+    float: left;
+    padding-left: 4em;
+    width: 380px;
+    height: 196px;
 }
 
-section.left {
-    width: 85%;
-    align-self: self-start;
-    align-content: flex-start;
+article:after, div.project{
+    content: "";
+    display: table-cell;
+    clear: both;
 }
-
-
-section > p:first-of-type:before{
-    content: '\301D';
-}
-
-section > p:last-of-type:after{
-    content: '\301E';
+div.project{
+    padding-left: 1em;
 }
 
 body > article{
+    display: block;
+    width: 97.7%;
     border-style: outset;
     border-radius: 10px;
     background-color: rgba(5, 226, 255, 30%);
