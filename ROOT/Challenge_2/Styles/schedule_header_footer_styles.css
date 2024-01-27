@@ -53,6 +53,7 @@ footer{
     padding-bottom: 14px;
     color: #373a32;
     background-color: rgba(233, 223, 211, 0.89);
+    float: bottom;
 }
 footer a#foot{
     color: #373a32;

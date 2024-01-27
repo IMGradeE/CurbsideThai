@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Challenge 2</title>
-    <!--TODO add styles-->
+        <link href="Styles/schedule_table_style.css" rel="stylesheet">
+        <link href="Styles/schedule_table_layout.css" rel="stylesheet">
+        <link href="Styles/schedule_header_footer_layout.css" rel="stylesheet">
+        <link href="Styles/schedule_header_footer_styles.css" rel="stylesheet">
 </head>
 <body>
 <header>
-    <nav>
-        <h2>Directory</h2>
-        <dl>
-            <dt><a href="../mainPage/mainPageSources/challenge_activities.html">Back to Challenge Activities</a></dt>
-            <dd id="homelink"></dd>
-            <dt><a href="../Challenge_2/story_layout1.html" >Layout One</a></dt>
-            <dd>Initial design of the "Story" I put together for this challenge.</dd>
-            <dt><a href="../Challenge_2/story_layout2.html" >Layout Two</a></dt>
-            <dd>Alternate design of the above "Story".</dd>
-            <dt><a href="../Challenge_2/myschedule.html">Schedule</a></dt>
-            <dd>My hourly schedule each week during semesters.</dd>
-        </dl>
-    </nav>
+    <div class="grid">
+        <div class="col-1-1" id="headerdiv">
+            <nav>
+                <h2>Directory</h2>
+                <hr class="headerhr">
+                <ul>
+                    <li><a href="../mainPage/mainPageSources/challenge_activities.html">Back to Challenge Activities</a></li>
+                    <li><a href="../Challenge_2/story_layout1.html" >Layout One</a></li>
+                    <li><a href="../Challenge_2/story_layout2.html" >Layout Two</a></li>
+                    <li><a href="../Challenge_2/myschedule.html">Schedule</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </header>
 <footer>Payton Wilkes &rarr; Spring 2024 || CS 2350 &times; Client Side Web Development &rarr; <a href="https://github.com/IMGradeE/CurbsideThai">SourceCode</a></footer>
 </body>
