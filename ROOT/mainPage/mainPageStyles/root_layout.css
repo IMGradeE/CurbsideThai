@@ -17,8 +17,8 @@ body > article {
     width: 100%;
 }
 
-body > footer {
-    clear: left;
+body > footer{
     float: bottom;
+    clear: both;
     width: 100%;
 }

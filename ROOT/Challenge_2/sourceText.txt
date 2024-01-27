@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--div container class="knockedLoose"-->
+<h2>Knocked Loose</h2>
+<p>
+  Knocked Loose is a 5 member hardcore-punk/metalcore band from Oldham County, Kentucky.
+  To sum up their style in a single phrase, their music is "high-attack"; brutal, unrelenting,
+  tense, fast-paced, and emotional. Their music perfectly embodies and relates the sentiments present in
+  punk culture, refusing to be ignored, or to be complicit in oppressive systems and social hierarchies. The song that
+  introduced me to the band was <em>Oblivion's Peak</em>, and I haven't stopped listening since.
+</p>
+<p>
+  The style described above has remained consistent over the now decade of recording and performing that the band have
+  engaged in, from their first EP <em>Pop Culture</em> which released in 2014, to their most recent 2023 LP
+  <em>Upon Loss</em>, the band has managed to give many elements of punk and straight edge cultures a voice that perfectly
+  embodies the sub-culture's intentions, outlooks, and goals.
+  <p><a href="https://en.wikipedia.org/wiki/Knocked_Loose">
+  Read more here.</a></p>
+</p>
+<aside>
+  <dl>
+    <dt>My Top 5 Favorite Songs</dt>
+    <dd>
+      <ul>
+        <li>Billy No Mates</li>
+        <li>Deep in the Willow</li>
+        <li>Small Victories</li>
+        <li>By the Grave</li>
+        <li>Manipulator II</li>
+      </ul>
+    </dd>
+    <dt>Honorable Mentions</dt>
+    <dd>
+      <ul>
+        <li>Everything is Quiet Now</li>
+        <li>DTAH</li>
+        <li>In the Walls</li>
+        <li>The Gospel</li>
+        <li>Blood Will Have Blood</li>
+      </ul>
+    </dd>
+  </dl>
+</aside>
+
+<!--End section-->
+<!--div container class="callousDaoboys"-->
+<h2 >The Callous Daoboys</h2>
+  <blockquote cite="https://en.wikipedia.org/wiki/The_Callous_Daoboys">The Callous Daoboys are an American mathcore band from Atlanta, Georgia.
+  Their name is a spoonerism of the football team the Dallas Cowboys.</blockquote>
+  <p>
+    This band is much more difficult to pin down specifics regarding genre and style, but that's what makes them so
+    interesting. They definitely have an overall style that is consistent with the mathcore and metalcore genres, but
+    many of their songs borrow from multiple completely unrelated genres like jazz, classical, hyper-pop, and so on,
+    manifesting in what I would refer to as "truncated rhapsodies".
+  </p>
+  <p>
+    This lack of strict adherence to the norms of any specific genre/subgenre enables them to fully leverage the
+    composition of each piece towards its narrative and motif. This is a constant across their discography, so any of
+    their releases would be a fitting example, but if you'd allow me to make a suggestion, it would be the track
+    <em>Star Baby</em> off of their most recent Studio Album <em>Celebrity Therapist</em>. Borrowing elements from various
+    genres to support the overall tonal-theme of dissonance and contempt towards the song's subject: regressive social
+    practices, and the contrived/inorganic public personas that perpetuate them.
+  </p>
+  <p>
+    I have so much to say about this band that it's difficult to articulate anything without rambling, and I'm sure I've
+    already said more than most would be interested in reading, so I'll wrap this section up with another recommendation,
+    <em>A Brief Article Regarding Time Loops</em>, which is the song that introduced me to their terrific body of work.
+  </p>
+
+<aside>
+  <dl>
+    <dt>My Top Five Favorite Songs</dt>
+    <dd>
+      <ul>
+        <li>A Brief Article Regarding Time Loops</li>
+        <li>Violent Astrology</li>
+        <li>Star Baby</li>
+        <li>Flip Flops at a Funeral</li>
+        <li>Cobra Winfrey</li>
+      </ul>
+    </dd>
+    <dt>Honorable Mentions</dt>
+    <dd>
+      <ul>
+        <li>Waco Jesus</li>
+        <li>What is Delicious? Who Swarms?</li>
+        <li>The Elephant Man In the Room</li>
+        <li>Pushing The Pink Envelope</li>
+        <li>Field Sobriety Practice</li>
+      </ul>
+    </dd>
+  </dl>
+</aside>
+
+<h1><a href="https://receiptify.herokuapp.com/">Receipts</a></h1> <!--Source of Images-->
+<h2>Top Artists Jan 2024</h2>
+<a><img src="../../ROOT/Challenge_2/Images/top_artists_short_term.png"></a>
+<h2>Top 10 tracks in the Last Six Months</h2>
+<a><img src="../../ROOT/Challenge_2/Images/top_tracks_medium_term_six_months.png"></a>
+<h2>All Time Top 10 tracks</h2>
+<a><img src="../../ROOT/Challenge_2/Images/top_tracks_medium_term_all_time.png"></a>
+<h2>All Time Top Genres</h2>
+<a><img src="../../ROOT/Challenge_2/Images/top_genres_medium_term.png"></a>
+</body>
+</html>
