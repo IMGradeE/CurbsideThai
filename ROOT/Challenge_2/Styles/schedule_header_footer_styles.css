@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+header{
+    background-image: url("../../Challenge_2/Images/laughtracks-2.png");
+    font-family: SortsMillGoudy-Regular, serif;
+    font-style: normal;
+    color: white;
+}
+
+header div.grid{
+    background: rgba(36, 73, 126, 0.62);
+    position: relative;
+    z-index: 1;
+}
+
+div.col-1-1#headerdiv h2{
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: -15px;
+    letter-spacing: 1px;
+}
+
+div.col-1-1#headerdiv{
+    margin-bottom: 5px;
+}
+
+div.col-1-1#headerdiv ul{
+    margin-top: 10px;
+    margin-bottom:15px;
+}
+
+div.col-1-1#headerdiv ul li{
+    border-style: dashed;
+    border-width: 1px;
+    border-top: transparent;
+    border-bottom: transparent;
+    border-left: transparent;
+}
+
+div.col-1-1#headerdiv ul li:last-of-type{
+    border-right: transparent;
+}
+
+caption{
+    background-color: rgba(233, 223, 211, 0.89);
+    text-align: right;
+}
+
+footer{
+    font-family: "JetBrains Mono",monospace;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    color: #373a32;
+    background-color: rgba(233, 223, 211, 0.89);
+}
+footer a#foot{
+    color: #373a32;
+}

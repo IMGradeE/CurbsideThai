@@ -5,18 +5,256 @@ Payton Wilkes
 01/24/2024
 */
 
-@import url("https://p.typekit.net/p.css?s=1&k=zlw8znb&ht=tk&f=1345.1346&a=189809410&app=typekit&e=css");
-
-@font-face {
-    font-family:"sorts-mill-goudy";
-    src:url("https://use.typekit.net/af/fd93b1/00000000000000000000d755/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/fd93b1/00000000000000000000d755/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/fd93b1/00000000000000000000d755/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
-    font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;
+@import url("https://use.typekit.net/zlw8znb.css");
+@font-face { font-family: SortsMillGoudy-Regular-Condensed;
+    src: url("../../Challenge_2/Fonts/Sorts_Mill_Goudy/SortsMillGoudy-Regular-Condensed.ttf");
+}
+@font-face { font-family: SortsMillGoudy-Regular;
+    src: url("../../Challenge_2/Fonts/Sorts_Mill_Goudy/SortsMillGoudy-Regular.ttf");
 }
 
-@font-face {
-    font-family:"sorts-mill-goudy";
-    src:url("https://use.typekit.net/af/2b9a3b/00000000000000000000d756/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff2"),url("https://use.typekit.net/af/2b9a3b/00000000000000000000d756/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff"),url("https://use.typekit.net/af/2b9a3b/00000000000000000000d756/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("opentype");
-    font-display:auto;font-style:italic;font-weight:500;font-stretch:normal;
+/*
+Colors:
+red #8f0c06
+background-color: #8f0c06;
+yellow
+background-color: #b88f54;
+pink #965470
+background-color: #965470;
+*/
+html{
+    font-family: sorts-mill-goudy, serif;
+    font-weight: 500;
+    font-style: normal;
+    background-image: url("../../Challenge_2/Images/eyeKL.jpg");
+    z-index: -1;
 }
 
-.tk-sorts-mill-goudy { font-family: "sorts-mill-goudy",serif; }
+header{
+    background-image: url("../../Challenge_2/Images/laughtracks-2.png");
+
+    font-family: SortsMillGoudy-Regular, serif;
+    font-style: normal;
+    color: white;
+
+}
+body{
+    border-radius: 15px;
+}
+
+div.col-1-1#headerdiv h2{
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: -15px;
+    letter-spacing: 1px;
+}
+
+div.col-1-1#headerdiv{
+    margin-bottom: 5px;
+}
+div.col-1-1#headerdiv ul{
+    margin-top: 10px;
+    margin-bottom:15px;
+}
+
+div.col-1-1#headerdiv ul li{
+    border-style: dashed;
+    border-width: 1px;
+    border-top: transparent;
+    border-bottom: transparent;
+    border-left: transparent;
+}
+div.col-1-1#headerdiv ul li:last-of-type{
+    border-right: transparent;
+}
+
+
+a.bodyLink:visited,
+a.bodyLink:link,
+a.bodyLink:active,
+a.bodyLink:hover{
+    color: inherit;
+    text-shadow: inherit;
+    text-transform: none;
+}
+
+header div.grid{
+    background: rgba(141, 0, 0, 0.49);
+
+    box-shadow: 0 0 4em 1em rgb(141 0 0 / 49%);
+    position: relative;
+    z-index: 1;
+}
+
+a:active, a:hover{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 1px #d50000;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+a:visited, a:link{
+    text-decoration: none;
+    color: white;
+}
+p{
+    clear: both;
+    margin-right: 40px;
+}
+div.row#row1KnockedLoose{
+    background-image: url("../../Challenge_2/Images/KL_BACKDROP_copy-2.png");
+}
+
+div.row#row1KnockedLoose > div.col-1-1 {
+    background-image: linear-gradient(rgba(255, 0, 0, 0.1),rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.85),rgba(255, 255, 255, 0.6));
+
+    position: relative;
+
+}
+
+div.row#row1KnockedLoose h2{
+    margin: 27px 0 30px 20px;
+    font-family: SortsMillGoudy-Regular-Condensed, serif;
+    text-shadow: rgba(255, 0, 0, 0.6) 0 2px;
+    font-size: xxx-large;
+}
+div.row h2{
+    margin: 10px 0 30px 20px;
+}
+
+div.row#row1KnockedLoose p{
+    text-shadow: 0 0 1px rgba(138, 0, 0, 0.6);
+}
+div.row#row1KnockedLoose {
+    font-family: SortsMillGoudy-Regular, serif;
+    font-size: large;
+    text-align: left;
+}
+
+div.row#row1KnockedLoose ul{
+    list-style-image: url("../../Challenge_2/Images/eyeballlistimage.png");
+}
+
+div.row#row1KnockedLoose div.col-1-3{
+    background: rgba(255, 242, 242, 0.3);
+    box-shadow: -15px 0 1em 1em rgba(255, 242, 242, 0.3);
+    position: relative;
+    z-index: 0;
+}
+div.row#row1KnockedLoose dt{
+    margin-top: 10px;
+    font-size: large;
+}
+ul{
+    list-style-position: inside;
+    margin-right: 0;
+    text-align: left;
+    margin-left: 40px;
+    line-height: 30px;
+}
+
+div.row li{
+    margin-left: 2% ;
+    margin-right: 0;
+    font-size: medium;
+    line-height: 30px;
+}
+span{
+    top: -7px;
+    position: relative;
+}
+
+p{
+    margin-left: 40px;
+}
+
+div.row#row2CallousDaoboys{
+    font-family: "Roboto Light", monospace;
+    font-weight: 200;
+    color: white;
+    text-shadow: 3px 3px 3px #86662e;
+    background-image: url("../../Challenge_2/Images/a0509988875_10.png");
+    font-size: medium;
+}
+
+div.row#row2CallousDaoboys h2{
+    font-size: xx-large;
+    font-weight: 400;
+    color: floralwhite;
+
+    text-transform: Uppercase;
+    text-decoration: 1px antiquewhite underline;
+}
+
+div.row#row2CallousDaoboys dt{
+    padding-top: 0;
+    font-size: medium;
+    font-weight: 300;
+}
+
+div.row#row2CallousDaoboys dd >*{
+    font-family: "Roboto Light", monospace;
+    color: floralwhite;
+    font-weight: 200;
+    font-style: normal;
+}
+
+div.row#row2CallousDaoboys ul{
+    background-color: rgba(184, 143, 84, 0.4);
+    box-shadow: -30px -12px 1em 2em rgba(184, 143, 84, .4);
+}
+div.row#row2CallousDaoboys aside{
+    background-color: rgba(184, 143, 84, 0.2);
+    box-shadow: -15px 0 3em 1em rgba(184, 143, 84, 0.3);
+}
+
+
+div.row#row2CallousDaoboys div.col-1-1{
+    background-image: linear-gradient(rgba(184, 143, 84, 0.2),rgba(184, 143, 84, 0.3),rgba(184, 143, 84, 0.4),rgba(184, 143, 84, 0.45),rgba(184, 143, 84, 0.3));
+    position: relative;
+    z-index: 1;
+}
+
+div.row#row2CallousDaoboys ul li:first-of-type{
+    list-style-image: url("../../Challenge_2/Images/cd_head_r.png");
+}
+div.row#row2CallousDaoboys ul li:nth-of-type(2){
+    list-style-image: url("../../Challenge_2/Images/cd_head_y.png");
+}
+div.row#row2CallousDaoboys ul li:nth-of-type(3){
+    list-style-image: url("../../Challenge_2/Images/cd_head_b.png");
+}
+div.row#row2CallousDaoboys ul li:nth-of-type(4){
+    list-style-image: url("../../Challenge_2/Images/cd_head_g.png");
+}
+div.row#row2CallousDaoboys ul li:nth-of-type(5){
+    list-style-image: url("../../Challenge_2/Images/cd_head_p.png");
+}
+hr{
+    height:10px;
+    margin: 0;
+    border-color: transparent;
+}
+div.row#row3Receipts{
+    z-index: 0;
+    position: relative;
+    background-image: linear-gradient(rgba(79, 5, 3, 0.75), rgba(184, 143, 84, 0.75), rgba(150, 84, 112, 0.75));
+    overflow: auto;
+}
+
+
+div.row#row3Receipts div.col-1-1 {
+    position: relative;
+    z-index: 2;
+}
+footer{
+    box-shadow: 0 0 10px 10px rgba(150, 84, 112, 0.75);
+    z-index: 3;
+    font-family: "JetBrains Mono",monospace;
+    margin:0;
+    padding: 0;
+    color: floralwhite;
+    background-image: repeating-linear-gradient(to bottom, rgba(150, 84, 112, 0.75), rgba(150, 84, 112, 0.75), rgba(150, 84, 112, 0.6));
+    overflow: clip;
+}

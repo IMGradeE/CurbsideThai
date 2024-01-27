@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+table{
+    width: 100%;
+}
+
+#firstcol{
+    width: 5%;
+}
+
+#daycols{
+    width: 13.57%;
+}
+
+tr{
+    height: 40px;
+}

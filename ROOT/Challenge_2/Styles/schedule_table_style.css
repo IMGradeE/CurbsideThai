@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/*
+Payton Wilkes
+01/24/2024
+*/
+
+@font-face { font-family: SortsMillGoudy-Regular-Condensed;
+    src: url("../../Challenge_2/Fonts/Sorts_Mill_Goudy/SortsMillGoudy-Regular-Condensed.ttf");
+}
+@font-face { font-family: SortsMillGoudy-Regular;
+    src: url("../../Challenge_2/Fonts/Sorts_Mill_Goudy/SortsMillGoudy-Regular.ttf");
+}
+
+@font-face { font-family: "JetBrains Mono ExtraLight";
+    src: url("../../Challenge_2/Fonts/JetBrainsMono/JetBrainsMono-ExtraLight.ttf");
+}
+/*
+Colors:
+red #8f0c06
+background-color: #8f0c06;
+yellow
+background-color: #b88f54;
+pink #965470
+background-color: #965470;
+*/
+
+html{
+    font-family: SortsMillGoudy-Regular, serif;
+    font-weight: 500;
+    font-style: normal;
+    background-image: url("../../Challenge_2/Images/eyeKL.jpg");
+}
+
+table{
+    font-family: "JetBrains Mono ExtraLight", monospace;
+    border-collapse: collapse;
+    border: 1px dashed #373a32;
+    background-image: url("../../Challenge_2/Images/decobackground-cells.png");
+    box-shadow: 0 0 1em 1em rgba(29, 91, 52, 0.15);
+}
+
+td{
+    border: 1px dashed black;
+    vertical-align: top;
+    text-align: left;
+    padding-top: 15px;
+    background-color: rgba(233, 223, 211, 0.75);
+    padding-left: 1.5em;
+}
+
+tr{
+    border: 1px solid #373a32;
+    color: black;
+    font-style: italic;
+}
+
+#ampmbreak td{
+    background-image: url("../../Challenge_2/Images/decoborder.png");
+}
+
+caption{
+    caption-side: bottom;
+}
+
+#firstcol{
+    background-image: url("../../Challenge_2/Images/decobackground.png");
+}
+
+.dayHeaders{
+    color: floralwhite;
+    background-image: url("../../Challenge_2/Images/decobackground-date-cells.png");
+    border: 1px solid rgb(233, 223, 211);
+}
+
+h2#schedhead{
+    padding-left: 10px;
+}
+
+th#timeHeader{
+    color: floralwhite;
+    text-align: center;
+}
+
+.timeStampHeader{
+    color: floralwhite;
+    text-align: right;
+    padding-right: 0.5em;
+}
+
+#ampmbreak{
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+body{
+    margin: 0 auto 0 auto;
+    width: 100%;
+    max-width: 1650px;
+    min-width: 640px;
+}
+
+header:after{
+    clear: both;
+    content: "";
+    display: table;}
+
+header nav ul{
+    list-style: none;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+div.col-1-1{
+    width: 100%;
+}
+
+div.grid{
+    width: 100%;
+    clear: both;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+div{
+    float: left;
+}
+
+header{
+    border-top: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+nav h2{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+header nav ul li{
+    width: 24.9%;
+    text-align: center;
+    float: left;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+.headerhr{
+    height:1px;
+    margin: 0 0 0 0;
+    background-color: whitesmoke;
+    border: none;
+}
+
+footer{
+    width: 100%; /*I don't know why this was taking up extra space*/
+    float: left;
+    clear: both;
+    text-align: center;
+}
+body{
+    border-radius: 15px;
+}
+div#scheddiv{
+    width: 100%;
+    background-color: rgba(233, 223, 211, 0.9);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+hr{
+    height:10px;
+    margin: 0;
+    border-color: transparent;
+}
+
+a:active, a:hover{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 1px #d50000;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+a:visited, a:link{
+    text-decoration: none;
+    color: white;
+}

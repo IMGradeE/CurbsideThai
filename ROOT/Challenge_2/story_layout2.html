@@ -2,33 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Layout 2</title>
     <link href="../Challenge_2/Styles/layout2.css" rel="stylesheet">
     <link href="../Challenge_2/Styles/styles2.css" rel="stylesheet">
+    <title>Layout 2</title>
 </head>
 <body>
 <header>
-    <nav>
-        <h2>Directory</h2>
-        <dl>
-            <dt><a href="../mainPage/mainPageSources/challenge_activities.html">Back to Challenge Activities</a></dt>
-            <dd id="homelink"></dd>
-            <dt><a href="../Challenge_2/story_layout1.html" >Layout One</a></dt>
-            <dd>Initial design of the "Story" I put together for this challenge.</dd>
-            <dt><a href="../Challenge_2/myschedule.html">Schedule</a></dt>
-            <dd>My hourly schedule each week during semesters.</dd>
-        </dl>
-    </nav>
+    <div class="grid">
+        <div class="col-1-1" id="headerdiv">
+            <nav>
+                <h2>Directory</h2>
+                <hr>
+                <ul>
+                    <li><a href="../mainPage/mainPageSources/challenge_activities.html">Challenges</a></li>
+                    <li><a href="../Challenge_2/story_layout1.html" >Alternate Page</a></li>
+                    <li><a href="../Challenge_2/myschedule.html">My Schedule</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </header>
+
 <!--
-This page uses the same grid layout.
+This page uses a grid layout.
 -->
-<div class="grid">
-    <h1>Two Artists I Like, and Some Spotify Stats</h1>
+<hr>
+<div class="grid" >
     <div class="row" id="row1KnockedLoose">
         <div class="col-1-1">
-            <h2>Knocked Loose</h2>
-            <div class="col-3-4">
+            <div class="col-2-3">
+                <h2>KNOCKED LOOSE</h2>
                 <p>
                     Knocked Loose is a 5 member hardcore-punk/metalcore band from Oldham County, Kentucky.
                     To sum up their style in a single phrase, their music is "high-attack"; brutal, unrelenting,
@@ -41,30 +44,30 @@ This page uses the same grid layout.
                     engaged in, from their first EP <em>Pop Culture</em> which released in 2014, to their most recent 2023 LP
                     <em>Upon Loss</em>, the band has managed to give many elements of punk and straight edge cultures a voice that perfectly
                     embodies the sub-culture's intentions, outlooks, and goals.
-                <p><a href="https://en.wikipedia.org/wiki/Knocked_Loose">
+                <p><a class="bodyLink" href="https://en.wikipedia.org/wiki/Knocked_Loose">
                     Read more here.</a></p>
             </div>
-            <div class="col-1-4">
+            <div class="col-1-3">
                 <aside>
                     <dl>
-                        <dt>My Top 5 Favorite Songs</dt>
+                        <dt>My Top Five Favorite Songs</dt>
                         <dd>
                             <ul>
-                                <li>Billy No Mates</li>
-                                <li>Deep in the Willow</li>
-                                <li>Small Victories</li>
-                                <li>By the Grave</li>
-                                <li>Manipulator II</li>
+                                <li><span>Billy No Mates</span></li>
+                                <li><span>Deep in the Willow</span></li>
+                                <li><span>Small Victories</span></li>
+                                <li><span>By the Grave</span></li>
+                                <li><span>Manipulator II</span></li>
                             </ul>
                         </dd>
                         <dt>Honorable Mentions</dt>
                         <dd>
                             <ul>
-                                <li>Everything is Quiet Now</li>
-                                <li>DTAH</li>
-                                <li>In the Walls</li>
-                                <li>The Gospel</li>
-                                <li>Blood Will Have Blood</li>
+                                <li><span>Everything is Quiet Now</span></li>
+                                <li><span>DTAH</span></li>
+                                <li><span>In the Walls</span></li>
+                                <li><span>The Gospel</span></li>
+                                <li><span>Blood Will Have Blood</span></li>
                             </ul>
                         </dd>
                     </dl>
@@ -72,15 +75,10 @@ This page uses the same grid layout.
             </div>
         </div>
     </div>
-
     <div class="row" id="row2CallousDaoboys">
-        <h2 >The Callous Daoboys</h2>
         <div class="col-1-1">
-            <div class="col-3-4">
-                <blockquote>
-                    The Callous Daoboys are an American mathcore band from Atlanta, Georgia.
-                    Their name is a spoonerism of the football team the Dallas Cowboys. </blockquote>
-                <cite><a href=https://en.wikipedia.org/wiki/The_Callous_Daoboys">Wikipedia</a></cite>
+            <div class="col-2-3">
+                <h2 >The Callous Daoboys</h2>
                 <p>
                     This band is much more difficult to pin down specifics regarding genre and style, but that's what makes them so
                     interesting. They definitely have an overall style that is consistent with the mathcore and metalcore genres, but
@@ -101,55 +99,46 @@ This page uses the same grid layout.
                     <em>A Brief Article Regarding Time Loops</em>, which is the song that introduced me to their terrific body of work.
                 </p>
             </div>
-            <div class="col-1-4">
+            <div class="col-1-3">
                 <aside>
                     <dl>
                         <dt>My Top Five Favorite Songs</dt>
                         <dd>
                             <ul>
-                                <li>A Brief Article Regarding Time Loops</li>
-                                <li>Violent Astrology</li>
-                                <li>Star Baby</li>
-                                <li>Flip Flops at a Funeral</li>
-                                <li>Cobra Winfrey</li>
+                                <li><span>A Brief Article Regarding Time Loops</span></li>
+                                <li><span>Violent Astrology</span></li>
+                                <li><span>Star Baby</span></li>
+                                <li><span>Flip Flops at a Funeral</span></li>
+                                <li><span>Cobra Winfrey</span></li>
                             </ul>
                         </dd>
                         <dt>Honorable Mentions</dt>
                         <dd>
                             <ul>
-                                <li>Waco Jesus</li>
-                                <li>What is Delicious? Who Swarms?</li>
-                                <li>The Elephant Man In the Room</li>
-                                <li>Pushing The Pink Envelope</li>
-                                <li>Field Sobriety Practice</li>
+                                <li><span>Waco Jesus</span></li>
+                                <li><span>What is Delicious? Who Swarms?</span></li>
+                                <li><span>The Elephant Man In the Room</span></li>
+                                <li><span>Pushing The Pink Envelope</span></li>
+                                <li><span>Field Sobriety Practice</span></li>
                             </ul>
                         </dd>
                     </dl>
                 </aside>
+                <br/>
             </div>
 
         </div>
     </div>
-
-    <div class="row" id="row3Receipts">
-        <div class="col-1-1">
-            <h1><a href="https://receiptify.herokuapp.com/">Receipts</a></h1>
+    <hr>
             <div class="col-1-4">
-                <h2>Top Artists Jan 2024</h2>
-                <a><img src="../../ROOT/Challenge_2/Images/top_artists_short_term.png"></a></div>
+                <a href="https://receiptify.herokuapp.com/"><img src="../../ROOT/Challenge_2/Images/top_artists_short_term.png"></a></div>
             <div class="col-1-4">
-                <h2>Top 10 tracks in the Last Six Months</h2>
-                <a><img src="../../ROOT/Challenge_2/Images/top_tracks_medium_term_six_months.png"></a></div>
+                <a href="https://receiptify.herokuapp.com/"><img src="../../ROOT/Challenge_2/Images/top_tracks_medium_term_six_months.png"></a></div>
             <div class="col-1-4">
-                <h2>All Time Top 10 tracks</h2>
-                <a><img src="../../ROOT/Challenge_2/Images/top_tracks_medium_term_all_time.png"></a></div>
+                <a href="https://receiptify.herokuapp.com/"><img src="../../ROOT/Challenge_2/Images/top_tracks_medium_term_all_time.png"></a></div>
             <div class="col-1-4">
-                <h2>All Time Top Genres</h2>
-                <a><img src="../../ROOT/Challenge_2/Images/top_genres_medium_term.png"></a></div>
-        </div>
-    </div>
+                <a href="https://receiptify.herokuapp.com/"><img src="../../ROOT/Challenge_2/Images/top_genres_medium_term.png"></a></div>
 </div>
-
 <footer>Payton Wilkes &rarr; Spring 2024 || CS 2350 &times; Client Side Web Development &rarr; <a href="https://github.com/IMGradeE/CurbsideThai">SourceCode</a></footer>
 </body>
 </html>

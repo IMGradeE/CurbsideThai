@@ -69,14 +69,6 @@ div.col-1-1#headerdiv ul li:last-of-type{
 }
 
 
-a.bodyLink:visited,
-a.bodyLink:link,
-a.bodyLink:active,
-a.bodyLink:hover{
-    color: inherit;
-    text-shadow: inherit;
-    text-transform: none;
-}
 
 header div.grid{
     background: rgba(141, 0, 0, 0.49);
@@ -84,6 +76,14 @@ header div.grid{
     box-shadow: 0 0 4em 1em rgb(141 0 0 / 49%);
     position: relative;
     z-index: 1;
+}
+a.bodyLink:visited,
+a.bodyLink:link,
+a.bodyLink:active,
+a.bodyLink:hover{
+    color: inherit;
+    text-shadow: inherit;
+    text-transform: none;
 }
 
 a:active, a:hover{
@@ -243,7 +243,7 @@ hr{
 div.row#row3Receipts{
     z-index: -1;
     position: relative;
-    background-image: linear-gradient(rgba(79, 5, 3, 0.75), rgba(184, 143, 84, 0.75), rgba(150, 84, 112, 0.75));
+    background-image: linear-gradient(rgba(79, 5, 3, 0), rgba(184, 143, 84, 0), rgba(150, 84, 112, 0.75));
     box-shadow: 0 -3em 3em 2em  rgba(0, 0, 0, 0.9);
     overflow: auto;
 }
@@ -287,9 +287,9 @@ blockquote:after{
 footer{
     z-index: 3;
     font-family: "JetBrains Mono",monospace;
-    margin:0;
-    padding: 0;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 14px;
     color: floralwhite;
     background-image: repeating-linear-gradient(to bottom, rgba(150, 84, 112, 0.75), rgba(150, 84, 112, 0.75), rgba(150, 84, 112, 0.6));
-    overflow: clip;
 }
