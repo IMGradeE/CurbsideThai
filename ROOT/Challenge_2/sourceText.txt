@@ -108,3 +108,4 @@
 <a><img src="../../ROOT/Challenge_2/Images/top_genres_medium_term.png"></a>
 </body>
 </html>
+
