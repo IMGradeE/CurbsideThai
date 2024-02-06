@@ -3,13 +3,36 @@
 /*
    
    Filename: tb_visual4.css
-
+   Author: Payton Wilkes
+   Date: 02/04/2024
 */
 
 
 /* Transformation Styles */
+article{
+    perspective: 800px;
 
+}
 
+figure#figure1{
+    translate: 0 0 -120px;
+    filter: saturate(1.3);
+    -webkit-filter: saturate(1.3);
+}
+
+figure#figure2{
+    translate: 0 -20px;
+    rotate: 50deg y;
+    filter: brightness(0.8) contrast(1.5);
+
+}
+
+figure#figure3{
+    translate: 0 -30px;
+    rotate: -50deg y;
+    filter: hue-rotate(170deg) saturate(3) brightness(1.5);
+
+}
 
 /* Filter Styles */
 

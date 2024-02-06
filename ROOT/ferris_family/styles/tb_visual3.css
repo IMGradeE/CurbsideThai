@@ -3,28 +3,78 @@
 /*
    
    Filename: tb_visual3.css
-
+    Author: Payton Wilkes
+    Date: 02/04/2024
 */
 
 /* HTML Styles */
-
+html{
+    background-image: url("../../ferris_family/images/tb_back5.png");
+}
 
 
 /* Page Body Styles */
+body{
+    border-left: solid 3px rgb(169,130,88);
+    border-right: solid 3px rgb(169,130,88);
+    box-shadow: 25px 0 35px rgb(53,21,0),
+                -25px 0 35px rgb(53,21,0);
+}
 
 
 
 /* Main Styles */
-
+main{
+    background: url("../../ferris_family/images/tb_back7.png") 100% / cover no-repeat padding-box;
+    box-shadow: inset 10px 10px 25px rgb(71,71,71),
+                inset -10px -10px 25px rgb(71,71,71);
+}
+header h1{
+    text-shadow: 1px 1px 0 rgb(221, 221, 221),
+                 5px 5px 20px rgba(41, 41, 41, 0.9);
+}
 
 
 /* Figure Box Styles */
+figure{
+    margin: 10px auto 10px auto;
+    width: 70%;
+}
 
+figure img{
+    border-style: solid;
+    border-width: 25px;
+    border-image: url("../../ferris_family/images/tb_frame.png") 60 / 35px stretch ;
+    display: block;
+    width: 100%;
+    filter: sepia(80%);
+    -webkit-border-image:  url("../../ferris_family/images/tb_frame.png") 60 / 35px stretch;
+    -moz-border-image:  url("../../ferris_family/images/tb_frame.png") 60 / 35px stretch;
+    -o-border-image:  url("../../ferris_family/images/tb_frame.png") 60 / 35px stretch;
+
+}
+
+figure figcaption{
+    font-family: "Palatino Linotype", Palatino, "Times New Roman", serif;
+    font-style: italic;
+    padding: 10px 0 10px 0;
+    text-align: center;
+
+}
 
 
 /* Article Styles */
+article{
+    background: url("../../ferris_family/images/tb_back6.png") bottom right/ 15% no-repeat;
+    border-right: 8px double rgb(147, 116, 68);
+    border-bottom: 8px double rgb(147, 116, 68);
+    border-bottom-right-radius: 80px;
+    box-shadow: inset -10px -10px 25px rgba(184, 154, 112, 0.7);
 
+}
 
 
 /* Footer Styles */
-
+footer {
+    background-image: linear-gradient(325deg, rgb(180, 148, 104) 20%, rgb(40, 33, 23) 60%);
+}
