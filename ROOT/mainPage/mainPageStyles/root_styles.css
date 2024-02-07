@@ -1,19 +1,17 @@
 @charset "UTF-8";
 
-@font-face { font-family: "JetBrains Mono";
-    src: local("JetBrains Mono");
-}
-/*Common Styles*/
+@import "../../mainPage/mainPageStyles/root_graphic_design.css";
 
-header > img {
-    height: 100%;
-    padding-bottom: 10px;
+@font-face { font-family: "JetBrains Mono";
+    src: url("../../Challenge_2/Fonts/JetBrainsMono");
 }
+
+/*Common Styles*/
 
 html{
     font-family: "JetBrains Mono", sans-serif;
-    background-color: rgba(5, 226, 255, 15%);
     color: black;
+    font-size:large;
 }
 
 header, article, header a{
@@ -51,19 +49,20 @@ img{
 }
 
 
-a.ch2Img img{
-    display: block;
-    float: left;
-    padding-left: 4em;
-    width: 380px;
-    height: 196px;
-}
 
-article:after, div.project{
+
+*:after{
     content: "";
     display: table-cell;
     clear: both;
 }
+
+div {
+    display: block;
+    float: bottom;
+    clear: left;
+}
+
 div.project{
     padding-left: 1em;
 }
@@ -76,6 +75,8 @@ body > article{
     background-color: rgba(5, 226, 255, 30%);
     padding-left: 2%;
     padding-right: -2%;
+    float: left;
+    clear: bottom;
 }
 
 dl {
@@ -126,7 +127,11 @@ a:link, a:visited{
 a:hover, a:active{
     font-weight: bold;
     font-style: italic;
-    color: rgb(5, 255, 195);
+    color: rgb(0, 208, 255);
+    text-shadow: -1px -1px 2px slategray,
+                 1px -1px 2px slategray,
+                 -1px 1px 2px slategray,
+                 1px 1px 2px slategray;
 }
 
 dl {
