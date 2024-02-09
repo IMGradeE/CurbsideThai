@@ -21,10 +21,13 @@ textarea:focus{
 
 input#nameBox:focus:valid,
 input#phoneBox:focus:valid{
-    background: rgb(220, 255, 220) url("../../red_ball_added_forms/images/rb_okay.png") bottom right/contain no-repeat;
+    background: rgb(220, 255, 220) url("../images/rb_okay.png") bottom right/contain no-repeat;
 }
 
 input#nameBox:focus:invalid,
 input#phoneBox:focus:invalid{
-    background: rgb(255, 230, 230) url("../../red_ball_added_forms/images/rb_warning.png") bottom right/contain no-repeat;
+    background: rgb(255, 230, 230) url("../images/rb_warning.png") bottom right/contain no-repeat;
+}
+input:-moz-placeholder{
+
 }
