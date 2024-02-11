@@ -9,7 +9,7 @@ header > h1{
 html{
     background: url(https://sigbovik.org/2024/img/achlogo.png) top left / 2% no-repeat,
     url(https://sigbovik.org/2024/img/achlogo.png) top right / 2% no-repeat,
-    url(../ch2_images/Tom-7.jpg) bottom right / 10% no-repeat,
+    url(../ch2_images/Tom-7.jpg) bottom right / 5% no-repeat,
     radial-gradient(circle at 100%, rgb(202, 255, 230), rgb(232, 255, 243) 50%, #eee 75%, rgb(232, 255, 243) 75%);
 }
 
