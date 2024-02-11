@@ -28,15 +28,6 @@ body {
     inset rgb(51, 21, 21) 0px 0px 40px;*/
 }
 
-label {
-    display: inline-block;
-    width: 50%;
-}
-
-input {
-    display: inline-block;
-    width: 50%;
-}
 
 input[type="submit"], input[type="reset"]{
     height: 35px;
@@ -121,4 +112,8 @@ div.col-3-4, fieldset.col-3-4  {
     width: 75%;
 }
 
+div{
+    margin: 0;
+    padding: 0;
+}
 

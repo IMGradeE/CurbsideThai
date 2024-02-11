@@ -6,6 +6,11 @@ header > h1{
     font-family: "JetBrains Mono NL Thin", monospace;
 }
 
+
+h1, h2, h3{
+    margin: 5px 0 5px 0;
+}
+
 html{
     background: url(https://sigbovik.org/2024/img/achlogo.png) top left / 2% no-repeat,
     url(https://sigbovik.org/2024/img/achlogo.png) top right / 2% no-repeat,
@@ -21,6 +26,7 @@ html > body > header#bg > a:focus{
     display: inline;
     clear:none;
 }
+
 html > body > header#bg > a{
     content: " ";
     white-space: nowrap;
@@ -35,6 +41,7 @@ header#bg{
     background-blend-mode: normal;
     border-radius: 10px;
 }
+
 header#bg p, header#bg h1{
     border-radius: 10px;
 }
@@ -48,7 +55,7 @@ body > header::after {
 input:focus,
 select:focus,
 textarea:focus {
-
+    background-color: rgb(255, 255, 255);
 }
 
 .boardLengthLabel a{
@@ -57,12 +64,14 @@ textarea:focus {
 }
 
 input#nameBox:focus:valid,
-input#phoneBox:focus:valid {
+input#phoneBox:focus:valid,
+input#mail:focus:valid {
     background: rgb(220, 255, 220);
 }
 
 input#nameBox:focus:invalid,
-input#phoneBox:focus:invalid {
+input#phoneBox:focus:invalid,
+input#mail:focus:invalid {
     background: rgb(255, 230, 230);
 }
 
@@ -81,14 +90,50 @@ fieldset{
     border-color: floralwhite;
     background-color: rgb(202, 255, 230);
 }
-fieldset#typePet:first-child{
-    float: left;
-    clear: both;
-    display: block;
-    width: 50%;
+input.petInf {
+    display: inline-block;
+    width: 100%;
 }
-fieldset.fieldset > label,fieldset.fieldset > input {
-    float: left;
-    display: block;
-    width: 49%;
+input, textarea, select, option{
+    background-color: rgb(237, 255, 245);
+}
+.contInf{
+    width: 100%;
+}
+
+label{
+    margin: 10px 0 6px 0;
+    font-size: large;
+    font-style: italic;
+}
+
+
+
+textarea.petInf{
+    min-height: 6em;
+    width: 100%;
+}
+
+label.petRadio{
+    width: 95%;
+    padding: 5px 0 5px 1em;
+    display: inline-block;
+    border: solid 1px floralwhite;
+    line-height: 1.4em;
+}
+input.petRadio{
+    width: 10%;
+    display:block;
+    float: right;
+    margin-top: 7px;
+    border: solid 1px floralwhite;
+}
+label.boardInfo{
+    margin-left: 3%;
+}
+input.boardInfo{
+    width: 60%;
+}
+input#boardLength{
+    margin-left: 30%;
 }
