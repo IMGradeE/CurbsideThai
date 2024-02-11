@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Competition Web Form</title>
+    <link href="/challenge_pet/styles/pcwf_base.css" rel="stylesheet"/>
+    <link href="/challenge_pet/styles/pcwf_styles.css" rel="stylesheet"/>
+</head>
+<body>
+<header id="bg">
+    <h1>The Association of Computational Heresy's Annual Pet-Competition!</h1>
+    <p>Every day, the submission deadline for the 2024 <a href="https://sigbovik.org/2024/">SIGBOVIK</a> conference
+        grows nearer. Oh, you're trying not to think about the deadline? Well boy do we have a surprise for you!
+        Your glorious sub-prime leaders here at ACH
+        have decided to continue our brand-new, long-running pet competition in order to <s>exacerbate</s>
+        alleviate the stress on the review committee and our contributors!
+    </p>
+    <p>Using this exciting web-form, you can send us information about your pets! We'll process that information with
+        our proprietary Artificial-Stupidity algorithms. We're not sure what they'll do, because they're in very pretty
+        opaque <em>rgb(255, 105, 180)</em> boxes, but I'm sure your pet's information will be safe during the process of
+        processing. We haven't really ironed out the details on the competition yet, but rest assured, there will be no
+        rewards or prizes for participation or winning.
+        <sub>(I am not affiliated with the ACH at an administrative level, I am merely a participant, and lover of Harry
+            Bovik, but please do feel free to send pictures of your animals anyway, that would be delightful <3)</sub>
+    </p>
+</header>
+<div class="grid">
+
+<form id="petForm" action="https://icarus.cs.weber.edu/~linda/cs2350/submit.php" method="post">
+
+<!--------------------------------->
+    <div class="row">
+        <fieldset id="petSection">
+        <legend><h1>Pet Information</h1></legend>
+            <!---->
+
+            <div class="col-2-3">
+                <label for="petName">Pet Name</label>
+                    <input name="name" id="petName" placeholder="Your pet's preferred name" type="text"/>
+                <label for="petBirthDate">Pet Birthday</label>
+                    <input name="birthdate" id="petBirthDate" type="date"/>
+                <label for="petInfo">Pet Biography</label><br/>
+                    <textarea name="petBio" id="petInfo" placeholder="Some information about your pet!" ></textarea>
+            </div>
+            <!---->
+            <div class="col-1-3">
+                <fieldset class="fieldset">
+                <legend><h3>Type of Pet</h3></legend>
+                    <label class="petRadio" for="petTypeCat">Cat</label>
+                        <input name="pet type" id="petTypeCat" value="Cat" type="radio"/>
+                    <label class="petRadio" for="petTypeDog">Dog</label>
+                        <input name="pet type" id="petTypeDog" value="Dog" type="radio"/>
+                    <label class="petRadio" for="petTypeReptile">Reptile</label>
+                        <input name="pet type" id="petTypeReptile" value="Reptile" type="radio"/>
+                    <label class="petRadio" for="petTypeBird">Bird</label>
+                        <input name="pet type" id="petTypeBird" value="Bird" type="radio"/>
+                    <label class="petRadio" for="petTypeRodent">Rodent</label>
+                        <input name="pet type" id="petTypeRodent" value="Rodent" type="radio"/>
+                    <label class="petRadio" for="petTypeSecret">Other</label>
+                        <input name="pet type" id="petTypeSecret" value="Secret 6th pet variant" type="radio"/>
+                </fieldset>
+            </div>
+
+            <!---->
+        </fieldset>
+    </div>
+
+<!--------------------------------->
+    <div class="formRow">
+        <fieldset class="fieldset">
+        <legend><h1>Contact Information</h1></legend>
+            <div class="col-1-3">
+                <fieldset class="fieldset">
+                <label for="nameBox">Owner Name</label>
+                <input name="ownerName" id="nameBox" placeholder="Your First and Last Name" type="text" required/>
+                </fieldset>
+            </div>
+            <div class="col-1-3">
+                <fieldset class="fieldset">
+                <label for="phoneBox">Owner Phone Number</label>
+                <input name="ownerTel" id="phoneBox" placeholder="(nnn) nnn-nnnn"
+                       pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" type="tel" required/>
+                </fieldset>
+            </div>
+            <div class="col-1-3">
+                <fieldset class="fieldset">
+                    <label for="mail">Owner Email Address</label>
+                <input name="ownerEmail" id="mail" placeholder="user@domain.extension" type="email" required/>
+                </fieldset>
+            </div>
+        </fieldset>
+    </div>
+    <!---------------------------------->
+    <div class="row">
+    <fieldset id="entrySection">
+       <legend><h1>Entry Information</h1></legend>
+
+        <div class="col-1-2">
+            <label> Which competition are you entering your pet in?<br/></label>
+            <div class="row">
+                <div class="col-2-3">
+                    <input name="entryCompetition" value="entrySinging" id="entrySing" type="checkbox"/>
+                </div>
+                <div class="col-1-3">
+                    <label for="entrySing">Singing</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2-3">
+                    <input name="entryCompetition" value="entryCuteness" id="entryCute" type="checkbox"/>
+                </div>
+                <div class="col-1-3">
+                    <label for="entryCute">Cuteness</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2-3">
+                    <input name="entryCompetition" value="entryTricks" id="entryTrick" type="checkbox"/>
+                </div>
+                <div class="col-1-3">
+                    <label for="entryTrick">Tricks</label>
+                </div>
+            </div>
+
+
+            </div>
+    </fieldset>
+
+        <div class="col-1-4">
+            <label for="entryName">Entry Name</label>
+            <input name="" id="entryName" placeholder="Ex: 'The Spectacular Bill'" type="text"/>
+        </div>
+        <div class="col-1-4">
+            <label for="entryTrickSelect">Trick Competition Events
+            <select name="events" id="entryTrickSelect" multiple>
+                <option value="Obstacle Course">Obstacle Course</option>
+                <option value="Frisbee/Ball/Other Catching">Frisbee/Ball/Other Catching</option>
+                <option value="Roll Over/Play Dead">Roll Over/Play Dead</option>
+                <option value="Other">Other</option>
+            </select></label>
+        </div>
+    </div>
+<!---------------------------------->
+    <div class="formRow">
+        <fieldset id="boardingSection">
+            <legend><h1>Boarding Information</h1></legend>
+            <div class="col-1-2">
+                <label for="boardLength">Duration of Boarding</label>
+                <input name="boardDuration" id="boardLength" type="number" min="0" max="3" value="0"/>
+            </div>
+            <div class="col-1-2">
+                <label for="kenSize">Kennel Size (inches)<br/><a>0'->48' in 8' steps.</a></label>
+                <label>0'
+                <input name="kennelSizeInches" id="kenSize" placeholder="" type="range" max="48" min="0" step="8"/>
+                    48'
+                </label>
+            </div>
+        </fieldset>
+    </div>
+        <div class="row"><br/>
+        <div class="col-1-4">&nbsp;</div>
+           <div class="col-1-2">
+               <input type="submit" value="Submit Entry"/>
+               <input type="reset" value="Reset Form"/>
+           </div>
+        <div class="col-1-4">&nbsp;</div>
+    </div>
+</form>
+</div>
+</body>
+</html>

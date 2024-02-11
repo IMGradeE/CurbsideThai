@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("/Challenge_2/Fonts/JetBrainsMono");
+}
+
+html{
+    font-family: "JetBrains Mono", monospace;
+    height: 100%;
+}
+
+p, h1, body, header, html {
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto auto;
+    width: 100%;
+    min-height: 100%;
+    max-width: 1470px;
+    min-width: 640px;
+   /* box-shadow: rgb(51, 51, 51) 20px 0px 40px, rgb(51, 51, 51) -20px 0px 40px,
+    inset rgb(51, 21, 21) 0px 0px 40px;*/
+}
+
+label {
+    display: inline-block;
+    width: 50%;
+}
+
+input {
+    display: inline-block;
+    width: 50%;
+}
+
+input[type="submit"], input[type="reset"]{
+    height: 35px;
+    width: 49%;
+    float: bottom;
+    clear: both;
+    margin-bottom:10px;
+}
+
+div.grid {
+    width: 100%;
+    clear: both;
+    margin: 0 auto;
+    max-width: 1470px;
+    min-width: 640px;
+}
+
+div.row {
+    width: 100%;
+    float: bottom;
+    clear: both;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    max-width: 1470px;
+    min-width: 640px;
+
+}
+div::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+div.grid::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div[class^="col-"]::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Grid Columns Styles */
+div[class^="col-"] {
+    display: block;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.col-1-1, fieldset.col-1-1 {
+    width: 100%;
+}
+
+div.col-1-2, fieldset.col-1-2 {
+    width: 50%;
+}
+
+div.col-1-3, fieldset.col-1-3  {
+    width: 33.33%;
+}
+
+div.col-2-3, fieldset.col-2-3  {
+    width: 66.67%;
+}
+
+div.col-1-4, fieldset.col-1-4 {
+    width: 25%;
+}
+
+div.col-3-4, fieldset.col-3-4  {
+    width: 75%;
+}
+
+
