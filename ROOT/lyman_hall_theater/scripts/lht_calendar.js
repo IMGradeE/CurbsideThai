@@ -7,7 +7,7 @@
 
    Filename:   lht_calendar.js
 */
-let thisDay = new Date("August 24, 2018");
+let thisDay = new Date();
 var calendar = document.getElementById("calendar");
 calendar.innerHTML = createCalendar(thisDay);
 
