@@ -290,6 +290,6 @@ footer{
     text-align: center;
     padding-top: 12px;
     padding-bottom: 14px;
-    color: floralwhite;
+    color: darkslategray;
     background-image: repeating-linear-gradient(to bottom, rgba(150, 84, 112, 0.75), rgba(150, 84, 112, 0.75), rgba(150, 84, 112, 0.6));
 }
