@@ -1,0 +1,423 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../../myWebsite/font/JetBrainsMono");
+}
+
+html{
+    font-family: "JetBrains Mono", monospace;
+    height: 100%;
+    width: 100%;
+    color: darkslategray;
+}
+th{
+    font-size:  large;
+    text-align: left;
+}
+td, tr{
+    text-align: left;
+    padding-right: 20px;
+}
+p, h1, h2, h3, body, header, html, a, article, div, input, footer, img, select, fieldset, form, legend, label {
+    vertical-align: baseline;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h2{
+    padding-left: 10px;
+    box-shadow: 7px 7px 3px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .01);
+    background-blend-mode: multiply;
+}
+a > img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+a.headerAnchor{
+    float: right;
+    margin-left: 10%;
+    content: " ";
+    white-space: nowrap;
+}
+
+a:link, a:visited{
+    color: darkslategray;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    animation-name: aInteract;
+    animation-duration: .4s;
+    animation-delay: .1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-play-state: running;
+}
+
+@keyframes aInteract {
+    from{
+
+    }
+    to{
+        color: #4d8080;
+        text-shadow: aliceblue 5px 1px 4px;
+    }
+}
+
+h1{
+    text-align: right;
+}
+/*---------------------------------------------------- LAYOUT RULES -------------------------------------------------*/
+div[class^="col_"]{
+    display: inline-block;
+    float: left;
+    padding: 0;
+    height: inherit;
+}
+div::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+div.grid::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div[class^="col_"]::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body{
+    max-width: 1670px;
+    width: 100%;
+    min-height: 1080px;
+    margin: 0 auto;
+    background: repeating-radial-gradient(circle at top right, aliceblue,
+    powderblue 50%,
+    aliceblue 100%);
+}
+header{
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+.headerAnchor{
+    background-image: none ;
+}
+p{
+    margin-top: 0;
+}
+
+
+footer {
+    text-align: center  ;
+    padding-top: 12px ;
+    padding-bottom: 14px ;
+    color: darkslategray;
+    border: inset 1px lightslategray;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0.5);
+}
+/*---------------------------------------------------- HEADING STYLES -----------------------------------------------*/
+h1, h2, h3{
+    margin: 5px 0 5px 0;
+}
+/*---------------------------------------------------- FORM STYLES --------------------------------------------------*/
+form{
+    height: min-content;
+    width: 100%;
+}
+.pattern:focus:valid{
+    background-color: rgba(60, 179, 113, 0.1); /*Medium sea green*/
+}
+.pattern:focus:invalid{
+    background-color: rgba(219, 112, 147, 0.1); /*Palevioletred*/
+}
+input[type="submit"], input[type="reset"]{
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(176, 224, 230, 0.1);
+}
+input[type="submit"]:hover, input[type="submit"]:active{
+    background-color: rgba(60, 179, 113, 0.1); /*Medium sea green*/
+}
+input[type="reset"]:hover, input[type="reset"]:active{
+    background-color: rgba(219, 112, 147, 0.1); /*Palevioletred*/
+}
+input, label, select{
+    width: 100%;
+    font-family: "JetBrains Mono Light", monospace;
+}
+input {
+    horiz-align: right;
+    border: aliceblue;
+    text-align: right;
+    line-height: 35px;
+    vertical-align: center;
+    font-size: medium;
+}
+input::placeholder{
+    font-size: x-small;
+}
+label{
+    font-family: "JetBrains Mono Medium", monospace;
+    font-size: medium;
+    font-style: italic;
+    line-height: 35px;
+    vertical-align: center;
+}
+.radioin{
+    vertical-align: center;
+    line-height: 20px;
+    margin: auto auto;
+}
+label.radioin{
+    margin-left: 5px;
+}
+div#radioRow, div#radioRow2{
+    border-width: 1px;
+    border-style:inset;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+div#radioRow{
+    border-top-right-radius: 12px;
+}
+div#radioRow2{
+    border-top-left-radius: 12px;
+}
+select{
+    width: 60%;
+    outline: none;
+    border: 2px solid powderblue;
+    border-radius: 10px;
+    margin: auto;
+    font-size: small;
+}
+textarea{
+    width: 99%;
+    max-height: 100%;
+    height: 340px;
+    background-color: aliceblue;
+    border: transparent;
+    border-radius: 12px;
+}
+legend h1, legend h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+hr{
+    color: darkslategray;
+    margin: 0 0 0 0;
+}
+/*---------------------------------------------------- DIV STYLES ---------------------------------------------------*/
+div{
+
+}
+
+div.gridEntry{
+    width: 100%;
+    clear: both;
+    margin: auto;
+    padding: 0 15px 0 15px;
+    border: 1px solid lightslategray;
+    border-radius: 12px;
+    background-image: radial-gradient(circle at top right, aliceblue,
+    rgba(198, 227, 255, 0.22) 50%,
+    aliceblue 100%);
+
+}
+/*---------------------------------------------------- `GRID` WIDTHS --------------------------------------------------*/
+div.grid{
+    width: 100%;
+    clear: both;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    border: 1px solid lightslategray;
+    border-radius: 12px;
+    background-color: aliceblue;
+    /*    box-shadow: 0 0 150px 10px rgba(243, 251, 255, 0.5);*/
+}
+
+div.gridNoDecor{
+    height: min-content;
+    width: 100%;
+    clear: both;
+    margin: 0 auto;
+    max-width: 1700px;
+}
+div.row{
+    width: 100%;
+    float: left;
+    clear: both;
+    max-width: 1700px;
+    height: min-content;
+    margin: 24px 0 12px 0;
+    background-image: radial-gradient(circle at bottom right, rgba(240, 248, 255, 0.46),
+    rgba(198, 227, 255, 0.22) 50%,
+    rgba(240, 248, 255, 0.46) 100%);
+    border-radius: 10px;
+    border: 1px solid rgba(119, 136, 153, 0.2);
+}
+h3.h3NoMargin{
+    margin:  0 0 0 0;
+    padding: 0 0 0 0;
+}
+div.rowAcademic {
+    width: 100%;
+    float: left;
+    clear: both;
+    max-width: 1700px;
+    height: min-content;
+    margin: 24px 0 12px 0;
+    background-image: radial-gradient(circle at bottom right, rgba(240, 248, 255, 0.46), rgba(198, 227, 255, 0.22) 50%, rgba(240, 248, 255, 0.46) 100%);
+    border-radius: 10px;
+    border: 1px solid rgba(119, 136, 153, 0.2);
+    padding: 20px 30px;
+}
+fieldset{
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: #f3fbff;
+    border-radius: 10px;
+    border: 1px solid rgba(119, 136, 153, 0.2);
+    border-right: none;
+    border-bottom: none;
+}
+fieldset.outerFieldset{
+    width: 100%;
+    border: transparent;
+    height: min-content;
+    box-shadow: 0 0 50px 10px rgba(243, 251, 255, 0.5);
+}
+div.rowNoMargin{
+    margin: 0 0 0 0;
+    width: 100%;
+    float: left;
+    clear: both;
+    height: min-content;
+    background-image: radial-gradient(circle at bottom right, rgba(240, 248, 255, 0.46),
+    rgba(198, 227, 255, 0.22) 50%,
+    rgba(240, 248, 255, 0.46) 100%);;
+    border-radius: 10px;
+    border: 1px solid rgba(119, 136, 153, 0.2);
+}
+
+div.rowBottomMargin{
+    width: 100%;
+    float: left;
+    clear: both;
+    height: min-content;
+    background-image: radial-gradient(circle at bottom right, rgba(240, 248, 255, 0.46),
+    rgba(198, 227, 255, 0.22) 50%,
+    rgba(240, 248, 255, 0.46) 100%);
+    border-radius: 10px;
+    border: 1px solid rgba(119, 136, 153, 0.2);
+    margin: 12px 0 24px 0;
+}
+div.col_1-1{
+    width: 100%;
+}
+div.col_1-1margin{
+    width: 99.9%;
+    margin: 0 .05% 0 .05%;
+}
+div.newdiv{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+div.col_1-2{
+    width: 50%;
+}
+div.col_1-2margin{
+    width: 49%;
+    padding: 0 .5% 0 .5%;
+}
+div.col_1-3{
+    width: 33.22%;
+    padding: 0 .11% 0 .11%;
+}
+div.col_45p{
+    width: 45%;
+}
+div.col_5p{
+    width: 5%;
+}
+div.col_2-3{
+    width: 66.67%;
+}
+div.col_1-4{
+    width: 25%;
+}
+div.col_3-4{
+    width: 75%;
+}
+div.col_1-10{
+    width: 10%;
+}
+div.col_2-10{
+    width: 20%;
+}
+div.col_1-4margin{
+    width: 24%;
+    margin: 0 .5% 0 .5%;
+}
+div.col_3-10margin{
+    width: 31%;
+    margin: 0 1% 0 1%;
+}
+div.col_3-10{
+    width: 30%;
+}
+div.col_4-10{
+    width: 40%;
+}
+div.col_6-10{
+    width: 60%;
+}
+div.col_7-10{
+    width: 70%;
+}
+div.col_8-10{
+    width: 80%;
+}
+div.col_9-10{
+    width: 90%;
+}
+div.col_1-6{
+    width: 16.66%;
+}
+div.col_5-6{
+    width: 83.34%;
+}
+div.col_1-20{
+    width: 83.34%;
+}
+div.col_1-20{
+    width: 5%;
+}
+div.col_19-20{
+    width: 95%;
+}
+div.col_65{
+    max-width: 65%;
+    height: 100%;
+}
+div.col_1p{
+    width: 1%;
+}
