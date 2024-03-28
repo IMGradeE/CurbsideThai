@@ -93,10 +93,10 @@ function hasNColorList(){
     }
     colorListHTML.innerHTML += "</ul>";
 }
-
+arrayTwo.forEach()
 /*Part Three*/
 function displayArray(array, divNum){
-    let divStr = "";
+    let divStr;
     if(divNum === 0){
         divStr = "twoArrays"
     }else if (divNum === 1){
