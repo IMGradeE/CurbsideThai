@@ -4,7 +4,7 @@
    
    File: jpf_grids3.js
 
-   Variables
+   let iables
    =========
 
    hitori1Rating, hitori2Rating, hitori3Rating
@@ -20,8 +20,8 @@
   	
 */
 
-var hitori1Rating = "Easy";
-var hitori1Numbers =
+let hitori1Rating = "Easy";
+let hitori1Numbers =
 [
 [1, 3, 4, 2, 3],
 [5, 2, 1, 3, 2],
@@ -30,7 +30,7 @@ var hitori1Numbers =
 [1, 3, 1, 5, 1]
 ];
 
-var hitori1Blocks =
+let hitori1Blocks =
 [
 [' ','#',' ',' ',' '],
 [' ',' ',' ',' ','#'],
@@ -40,8 +40,8 @@ var hitori1Blocks =
 ];
 
 
-var hitori2Rating = "Medium";
-var hitori2Numbers =
+let hitori2Rating = "Medium";
+let hitori2Numbers =
 [
 [4,3,2,1,5,4,2],
 [5,2,3,3,4,1,2],
@@ -52,7 +52,7 @@ var hitori2Numbers =
 [3,5,6,5,1,1,3]
 ];
 
-var hitori2Blocks =
+let hitori2Blocks =
 [
 ['#',' ',' ',' ',' ',' ','#'],
 [' ','#',' ','#',' ',' ',' '],
@@ -64,8 +64,8 @@ var hitori2Blocks =
 ];
 
 
-var hitori3Rating = "Hard";
-var hitori3Numbers =
+let hitori3Rating = "Hard";
+let hitori3Numbers =
 [
 [2,4,3,8,6,8,9,3,5],
 [4,3,6,9,4,3,8,2,2],
@@ -78,7 +78,7 @@ var hitori3Numbers =
 [3,5,8,4,6,1,2,8,6]
 ];
 
-var hitori3Blocks =
+let hitori3Blocks =
 [
 [' ',' ','#',' ',' ','#',' ',' ',' '],
 [' ','#',' ',' ','#',' ',' ','#',' '],
