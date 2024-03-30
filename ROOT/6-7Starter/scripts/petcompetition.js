@@ -77,7 +77,7 @@ function init() {
         if(!isNaN(days)){
             daysElement.value = (days);
             cost = days*boardingFee;
-            boardingFeeElement.value = fString(cost);
+            boardingFeeElement.value = cost.toFixed(2);
         }else{
             daysElement.value =("0");
             boardingFeeElement.value =("0.00");
