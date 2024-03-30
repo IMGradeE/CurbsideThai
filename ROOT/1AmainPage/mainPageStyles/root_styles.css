@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import "../../mainPage/mainPageStyles/root_graphic_design.css";
+@import "../mainPageStyles/root_graphic_design.css";
 
 @font-face { font-family: "JetBrains Mono";
     src: url("../../Challenge_2/Fonts/JetBrainsMono");
