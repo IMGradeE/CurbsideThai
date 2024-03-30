@@ -27,7 +27,7 @@ window.addEventListener("load",         function () {
     });
 
 function fString(x){
-    return x.toFixed(2);
+    return x.toLocaleString("en-US", {style: "currency", currency: "USD"});
 }
 
 function init() {
