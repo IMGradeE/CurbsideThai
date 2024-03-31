@@ -15,6 +15,7 @@ window.addEventListener("load", function (){
     orderForm.elements.model.focus();
     calcOrder();
 })
+
 function calcOrder()
 {
     /*Calculates the cost of the customer order*/
@@ -38,6 +39,15 @@ function calcOrder()
 
     let totalCost = initialCost + pCost +salesTax;
     orderForm.elements.totalCost.value = formatUSACurrency(totalCost);
+
+    orderForm.elements.model.onchange = calcOrder;
+    orderForm.elements.qty.onchange = calcOrder;
+    let planOptions = document.querySelectorAll('input[name="protection"]');
+    for (let button of planOptions) {
+        button.onclick = calcOrder;
+    }
+    orderForm.elements.modelName.value = orderForm.elements.model.options[mIndex].text;
+    orderForm.elements.protectionName.value = document.querySelector('input[name="protection"]:checked').nextSibling.nodeValue;
 
 }
 function formatNumber(val, decimals)
