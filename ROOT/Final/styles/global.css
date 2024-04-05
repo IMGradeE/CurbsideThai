@@ -22,13 +22,23 @@ p, h1, h2, h3, body, header, html, a, article, div, input, footer, img, select, 
 a > img{
     max-width: 50px;
     max-height: 50px;
+    margin-top: 7px;
 }
 
 a.headerAnchor{
     float: right;
-    margin-left: 10%;
     content: " ";
     white-space: nowrap;
+    background-color: #f3fbff;
+    border-radius: 10px;
+    border: 1px solid rgba(119, 136, 153, 0.2);
+    border-right: none;
+    border-bottom: none;
+    box-shadow: 0 0 50px 10px rgba(243, 251, 255, 0.5);
+    margin-top: 7px;
+    margin-right: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 a:link, a:visited{
@@ -107,6 +117,15 @@ p{
     margin-top: 0;
 }
 
+div#numSymbols{
+    font-family: "JetBrains Mono", monospace;
+    color: darkslategray;
+    width: 1em;
+    border: aliceblue;
+    text-align: center;
+    line-height: 30px;
+    font-size: x-large;
+}
 
 footer {
     text-align: center  ;
@@ -126,95 +145,23 @@ form{
     height: min-content;
     width: 100%;
 }
-.pattern:focus:valid{
-    background-color: rgba(60, 179, 113, 0.1); /*Medium sea green*/
-}
-.pattern:focus:invalid{
-    background-color: rgba(219, 112, 147, 0.1); /*Palevioletred*/
-}
-input[type="submit"], input[type="reset"]{
-    height: 35px;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(176, 224, 230, 0.1);
-}
-input[type="submit"]:hover, input[type="submit"]:active{
-    background-color: rgba(60, 179, 113, 0.1); /*Medium sea green*/
-}
-input[type="reset"]:hover, input[type="reset"]:active{
-    background-color: rgba(219, 112, 147, 0.1); /*Palevioletred*/
-}
-input, label, select{
-    width: 100%;
-    font-family: "JetBrains Mono Light", monospace;
-}
-input {
-    horiz-align: right;
-    border: aliceblue;
-    text-align: right;
-    line-height: 35px;
-    vertical-align: center;
-    font-size: medium;
-}
-input::placeholder{
-    font-size: x-small;
-}
-label{
-    font-family: "JetBrains Mono Medium", monospace;
-    font-size: medium;
-    font-style: italic;
-    line-height: 35px;
-    vertical-align: center;
-}
-.radioin{
-    vertical-align: center;
-    line-height: 20px;
-    margin: auto auto;
-}
-label.radioin{
-    margin-left: 5px;
-}
-div#radioRow, div#radioRow2{
-    border-width: 1px;
-    border-style:inset;
-    border-bottom: transparent;
-    border-left: transparent;
-    border-right: transparent;
-}
-div#radioRow{
-    border-top-right-radius: 12px;
-}
-div#radioRow2{
-    border-top-left-radius: 12px;
-  }
-select{
-    width: 60%;
-    outline: none;
-    border: 2px solid powderblue;
-    border-radius: 10px;
-    margin: auto;
-    font-size: small;
-}
-textarea{
-    width: 99%;
-    max-height: 100%;
-    height: 340px;
-    background-color: aliceblue;
-    border: transparent;
-    border-radius: 12px;
-}
-legend h1, legend h3{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-hr{
-    color: darkslategray;
-    margin: 0 0 0 0;
-}
-/*---------------------------------------------------- DIV STYLES ---------------------------------------------------*/
-div{
 
+input {
+    font-family: "JetBrains Mono", monospace;
+    color: darkslategray;
+    width: 1.5em;
+    border: aliceblue;
+    text-align: center;
+    line-height: 30px;
+    font-size: x-large;
+    padding: 0;
 }
+
+input:active{
+    border: 1px aliceblue;
+}
+
+/*---------------------------------------------------- DIV STYLES ---------------------------------------------------*/
 
 div.gridEntry{
     width: 100%;
@@ -277,7 +224,7 @@ div.rowAcademic {
 }
 fieldset{
     width: 98%;
-    margin-left: 1%;
+    margin-left: 0%;
     margin-right: 1%;
     background-color: #f3fbff;
     border-radius: 10px;
